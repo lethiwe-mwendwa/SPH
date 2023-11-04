@@ -1,5 +1,6 @@
 #include <pspkernel.h>
 #include <pspdebug.h>
+#include <pspctrl.h>
 
 PSP_MODULE_INFO("PSPHome", 0,1,0);
 
@@ -28,5 +29,61 @@ auto main() -> int{
     setupCallbacks();
     pspDebugScreenInit();
 
+    sceCtrlSetSamplingCycle(0);
+    sceCtrlSetSamplingMode(PSP_CTRL_MODE_ANALOG);
+
+    SceCtrlData ctrlData;
+
     pspDebugScreenPrintf("Hello from C++!");
+    while(true){
+        sceCtrlReadBufferPositive(&ctrlData, 1);
+
+        switch (ctrlData.Buttons)
+        {
+
+        // Important buttons
+        case PSP_CTRL_START:
+            pspDebugScreenPrintf("START PRESSED\n");
+            break;
+        case PSP_CTRL_SELECT:
+            pspDebugScreenPrintf("SELECT PRESSED\n");
+            break;
+
+        // Right Buttons
+        case PSP_CTRL_TRIANGLE:
+            pspDebugScreenPrintf("TRIANGLE PRESSED\n");
+            break;
+        case PSP_CTRL_CIRCLE:
+            pspDebugScreenPrintf("CIRCLE PRESSED\n");
+            break;
+        case PSP_CTRL_CROSS:
+            pspDebugScreenPrintf("CROSS PRESSED\n");
+            break;
+        case PSP_CTRL_SQUARE:
+            pspDebugScreenPrintf("SQUARE PRESSED\n");
+            break;
+
+        // D-Pad
+        case PSP_CTRL_UP:
+            pspDebugScreenPrintf("UP PRESSED\n");
+            break;
+        case PSP_CTRL_RIGHT:
+            pspDebugScreenPrintf("RIGHT PRESSED\n");
+            break;
+        case PSP_CTRL_DOWN:
+            pspDebugScreenPrintf("DOWN PRESSED\n");
+            break;
+        case PSP_CTRL_LEFT:
+            pspDebugScreenPrintf("LEFT PRESSED\n");
+            break;
+
+        // TRIGGERRRREDDD!!?!?!?!?!??!
+        case PSP_CTRL_RTRIGGER:
+            pspDebugScreenPrintf("Right pew pew\n");
+            break;
+        case PSP_CTRL_LTRIGGER:
+            pspDebugScreenPrintf("Left pew pew\n");
+            break;
+        }
+    }
 }
