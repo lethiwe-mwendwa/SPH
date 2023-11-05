@@ -1,5 +1,5 @@
 # SPH[F]
-SPHome (Station Portable Home [Failure]), is my solo project for HackNotts84!
+SPHF (Station Portable Home [Failure]), is my solo project for HackNotts84!
 
 ## Inspiration
 Wouldn't it be nice to grab some old retro hardware and make it your own personal home assistant? A quick reuse of old hardware turned into your own neat centre piece as well as a helpful tool that would show you general information; be it the current song you're listening to, or the weather outside, or even a little to-do list! 
