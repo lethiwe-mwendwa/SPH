@@ -1,10 +1,13 @@
 TARGET = PSPHome
 OBJS = main.o \
-gfx.o
+gfx.o \
+player.o
 
-CFLAGS = 
-CXXFLAGS = $(CFLAGS) -std=c++14 -fno-rtti
+CFLAGS = -O2 -G0 -Wall
+CXXFLAGS = $(CFLAGS) -lstdc++ -std=c++14 -fno-exceptions -fno-rtti 
 ASFLAGS = $(CFLAGS)
+
+LIBS = -lmad -lpspaudiolib -lpspaudio -lpsppower -lpng -lz -lpspgu
 
 # PSP stuff
 BUILD_PRX = 1

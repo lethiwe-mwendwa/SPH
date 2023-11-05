@@ -1,4 +1,5 @@
-#include "gfx.hpp"
+#include "gfx.h"
+
 #include <cstdint>
 #include <pspge.h>
 #include <pspdisplay.h>
