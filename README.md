@@ -14,14 +14,14 @@ There were to be asteroids that would fly down that the player would need to dod
 I used the PSP SDK in C++, using VSCode as my interpreter.
 For Debugging I alternated between moving the EBOOT.PBP game file to my PSP, as well as using PPSSPP, a PSP emulator, that can run EBOOT game files.
 
-## Challenges we ran into
+## Challenges I ran into
 -My psp's cable split open which prevented me from moving files over to my psp for testing. It was quite discouraging at first, but I was able to borrow a cable for a little bit, but just for my early testing.
 
 -I spent countless hours banging my head at code, trying to learn psp sdk's commands; I was challenged by the fact that there was no intelisense, and there were long slightly confusing functions like: sceDisplayWaitVblankStart();, which I needed to quickly understand to move forward. Typos were my biggest enemy. Forgot the last time an error in my code was caused by simple typos so it was hard to not get frustrated.
 
 -Psp sdk was not recognised in VSCode, so there were no function descriptions with the parameters needed, or corrections/suggestions from the intellisense. My work was slowed drastically. I was battling out with giving up constantly, but the fact that I made things appear on my PSP was enough to keep me going. 12 year old me would have fallen down at the thought of that.
 
-## Accomplishments that we're proud of
+## Accomplishments that I'm proud of
 
 -Being able to keep moving as a solo dev, with myself to motivate me
 -Understanding a bit more about how functions like "drawRect" and "clear" work, and how certain pixels are individually manipulated; diving a little bit into how graphics libraries are made.
@@ -30,7 +30,7 @@ For Debugging I alternated between moving the EBOOT.PBP game file to my PSP, as 
 
 -I suppose another thing is learning how to get started off with the psp sdk. It's something I never touched before today, and it was really exhilarating making every bit of progress.
 
-## What we learned
+## What I learned
 Sometimes things not going to plan isn't necessarily bad.
 My little retro home appliance idea was cool, bit its no use if I cant make it; so shifting my priority to maximising my learning here really made this more enjoyable.
 My little controllable space ship may not be in line with my original idea, but I'm definitely closer to completing that idea!
